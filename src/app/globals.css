@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
+/* Design tokens (tu estilo Canva) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #fbf3ef;
+  --primary: #e32f24;
+  --ink: #1e1b18;
+  --muted: #6b6460;
+  --card: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Base styles */
+html,
+body {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+}
+
+/* Scrollbar (Chrome/Edge/Safari) */
+::-webkit-scrollbar {
+  width: 14px;   /* más ancho */
+  height: 14px;  /* más alto (horizontal) */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 999px;
+  border: 3px solid var(--cream);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(0.95);
+}
+
+/* Scrollbar (Firefox) */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--primary) var(--cream);
+}
+
+/* Font utility classes */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
 }
