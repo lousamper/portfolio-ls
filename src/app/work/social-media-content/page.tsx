@@ -487,9 +487,9 @@ export default function SocialMediaWorkPage() {
       </p>
 
       <div className="mt-5 flex flex-col items-center">
-        <Button href="/#connect" variant="primary">
-          Let’s connect
-        </Button>
+        <Button href="mailto:lou.samper@gmail.com" variant="primary">
+  Let’s connect
+</Button>
 
         {/* Go back debajo del botón */}
         <a
@@ -504,7 +504,7 @@ export default function SocialMediaWorkPage() {
 </Section>
 
       <footer className="bg-white py-10 text-center text-xs text-[var(--muted)]">
-        © {new Date().getFullYear()} Ludmila Samper
+        © {new Date().getFullYear()} Ludmila
       </footer>
     </main>
   );

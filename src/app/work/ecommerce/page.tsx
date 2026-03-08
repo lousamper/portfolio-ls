@@ -292,9 +292,9 @@ export default function EcommerceWorkPage() {
       </p>
 
       <div className="mt-6 flex flex-col items-center gap-3">
-        <Button href="/#connect" variant="primary">
-          Let’s connect
-        </Button> 
+        <Button href="mailto:lou.samper@gmail.com" variant="primary">
+  Let’s connect
+</Button>
 
         <a
           href="/#work"
