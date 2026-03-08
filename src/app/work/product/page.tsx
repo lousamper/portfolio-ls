@@ -353,7 +353,7 @@ export default function ProductWorkPage() {
       What I bring:
     </h3>
 
-    <ul className="mt-10 space-y-7 text-sm leading-snug text-[var(--muted)]">
+    <ul className="mt-11 space-y-7 text-sm leading-snug text-[var(--muted)]">
       {[
         "End-to-end product ownership, from idea and validation to development",
         "Experience building and scaling platforms from zero",
@@ -367,7 +367,7 @@ export default function ProductWorkPage() {
             alt=""
             width={28}
             height={28}
-            className="mt-[2px] h-[28px] w-[28px] object-contain"
+            className="mt-0.5 h-[28px] w-[28px] object-contain"
           />
           <p>{text}</p>
         </li>

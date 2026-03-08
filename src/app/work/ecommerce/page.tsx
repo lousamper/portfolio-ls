@@ -141,7 +141,7 @@ export default function EcommerceWorkPage() {
       </div>
 
       <p className="mt-2 text-center text-xs text-[var(--muted)]">
-        Most product were client private.
+        Most products were client private.
       </p>
     </div>
   </div>
@@ -308,7 +308,7 @@ export default function EcommerceWorkPage() {
 </Section>
 
       <footer className="bg-white py-10 text-center text-xs text-[var(--muted)]">
-        © {new Date().getFullYear()} Ludmila Samper
+        © {new Date().getFullYear()} Ludmila
       </footer>
     </main>
   );
