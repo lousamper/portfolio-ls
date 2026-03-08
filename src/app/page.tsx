@@ -156,20 +156,7 @@ export default function HomePage() {
             <h3 className="font-display text-4xl">Experience</h3>
 
             <ul className="mt-6 space-y-7 text-sm leading-relaxed text-[var(--muted)]">
-              <li>
-                <div>
-                  Founder at{" "}
-                  <a
-                    href="https://girls-collective.com"
-                    className="underline"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    girls-collective.com
-                  </a>
-                </div>
-                <div>Spain &amp; Latam | 2025 - Present</div>
-              </li>
+
 
               <li>
                 <div>
