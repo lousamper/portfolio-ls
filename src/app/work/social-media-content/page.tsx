@@ -450,6 +450,99 @@ export default function SocialMediaWorkPage() {
   </div>
 </Section>
 
+{/* PROJECT: EL MAPA DEL ALQUILER */}
+<Section className="bg-white py-14">
+  <div className="grid gap-12 md:grid-cols-2 md:items-start">
+    {/* LEFT — TEXTO */}
+    <div>
+      <h2 className="font-display text-3xl">Project: El mapa del alquiler</h2>
+
+      <p className="mt-2 text-xs text-[var(--muted)]">
+        2026 | Founder · Spain
+      </p>
+
+      <div className="mt-8 max-w-[460px] text-justify text-sm leading-snug text-[var(--muted)]">
+        <p>
+          Founded a collaborative platform where tenants can leave anonymous
+          reviews of apartments and rooms in Spain, with the goal of bringing
+          transparency to the rental market and empowering future tenants to make
+          better informed decisions.
+        </p>
+
+        <p className="mt-6">
+          Built the platform end-to-end, creating all content and designing the
+          website independently.
+        </p>
+      </div>
+
+      {/* LINKS / ICONS */}
+      <div className="mt-12 flex flex-wrap items-center gap-4 text-sm text-[var(--muted)]">
+        <span className="font-sans font-semibold text-[var(--ink)]">
+          View live platform &amp; channels:
+        </span>
+
+        <div className="flex items-center gap-3">
+          {[
+            {
+              href: "https://www.elmapadelalquiler.es/",
+              icon: "/icons/globe1.png",
+              label: "Website",
+            },
+            {
+              href: "https://www.tiktok.com/@elmapadelalquiler",
+              icon: "/icons/tiktok1.png",
+              label: "TikTok",
+            },
+            {
+              href: "https://www.instagram.com/mapadelalquiler/",
+              icon: "/icons/instagram1.png",
+              label: "Instagram",
+            },
+            {
+              href: "https://x.com/mapadelalquiler",
+              icon: "/icons/x1.png",
+              label: "X",
+            },
+          ].map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noreferrer"
+              className="group"
+              aria-label={s.label}
+              title={s.label}
+            >
+              <span className="grid h-8 w-8 place-items-center rounded-full text-white transition group-hover:opacity-90">
+                <span className="relative h-5 w-5 overflow-hidden rounded-full">
+                  <Image
+                    src={s.icon}
+                    alt=""
+                    fill
+                    className="object-contain"
+                  />
+                </span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* RIGHT — IMAGEN */}
+    <div className="w-full">
+      <div className="relative aspect-[7/5] w-full overflow-hidden">
+        <Image
+          src="/mapa-social.png"
+          alt="El mapa del alquiler social media work"
+          fill
+          className="object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</Section>
+
 {/* WHAT I BRING (CREMITA) */}
 <Section className="bg-[var(--cream)] py-14">
   <div className="mx-auto w-full max-w-4xl px-4 md:px-6">
