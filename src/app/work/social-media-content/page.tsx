@@ -137,6 +137,20 @@ export default function SocialMediaWorkPage() {
             end-to-end strategy: including content planning, creator
             partnerships, hands on creation and performance analysis.
           </p>
+
+          <p className="mt-5">
+  Plus, I run a personal creative account where I experiment with visual
+  storytelling and short-form content:
+
+  <a
+    href="https://www.instagram.com/louuuinspain"
+    target="_blank"
+    rel="noreferrer"
+    className="ml-1 underline underline-offset-2"
+  >
+    @louuuinspain
+  </a>
+</p>
         </div>
 
         {/* esto empuja el "scroll for..." al fondo del bloque*/}
@@ -232,7 +246,7 @@ export default function SocialMediaWorkPage() {
           including social media, influencer marketing and PR activations.
         </p>
         <p className="mt-4">
-          Managed always-on budgets + additional investment bursts for major
+          Managed always on budgets + additional investment bursts for major
           product launches.
         </p>
       </div>
@@ -316,7 +330,7 @@ export default function SocialMediaWorkPage() {
         </p>
 
         <p className="mt-5">
-          Led high-impact influencer events, press activations and beauty
+          Led high impact influencer events, press activations and beauty
           experiences, both locally and internationally.
         </p>
 
@@ -351,103 +365,6 @@ export default function SocialMediaWorkPage() {
   </div>
 
 
-</Section>
-
-{/* CASE: GIRLS COLLECTIVE (BLANCO) */}
-<Section className="bg-white py-12">
-  <div className="grid gap-10 md:grid-cols-2 md:items-start">
-    {/* LEFT: TEXT */}
-    <div>
-      <h2 className="font-display text-3xl">Project: Girls Collective</h2>
-      <p className="mt-2 text-xs text-[var(--muted)]">
-        2025–2026 | Founder · Spain &amp; Latam
-      </p>
-
-      <div className="mt-8 max-w-[380px] text-justify text-sm leading-snug text-[var(--muted)]">
-        <p>
-          Founded a city-based social discovery platform designed to help women
-          connect through shared interests and real-life experiences.
-        </p>
-        <p className="mt-4">
-          Built the platform end-to-end, creating all content and designing the
-          website independently.
-        </p>
-      </div>
-
-      {/* bullets con flor (a la derecha un poquito como Canva) */}
-      <ul className="mt-10 max-w-[380px] space-y-8 pl-12 md:pl-16 text-sm leading-snug text-[var(--muted)]">
-        {[
-          "Grew the web platform to 500+ users organically in under 2 months.",
-          "After testing multiple channels, identified Threads as the strongest early acquisition channel and leveraged conversation-led content to drive the majority of traffic.",
-        ].map((text, idx) => (
-          <li key={idx} className="flex items-start gap-4">
-            <Image
-              src="/flor-bullet.png"
-              alt=""
-              width={28}
-              height={28}
-              className="mt-0.5 h-[28px] w-[28px] shrink-0 object-contain"
-            />
-            <p className="max-w-[420px] text-justify">{text}</p>
-          </li>
-        ))}
-      </ul>
-
-      {/* links / icons */}
-      <div className="mt-10 flex flex-wrap items-center gap-2 text-sm text-[var(--muted)]">
-        <span className="font-sans font-semibold text-[var(--ink)]">
-          View live platform &amp; channels:
-        </span>
-
-        <div className="flex items-center gap-3">
-          {[
-            { href: "https://girls-collective.com", icon: "/icons/globe.png", label: "Website" },
-            { href: "https://www.tiktok.com/@valenciagirlscollective", icon: "/icons/tiktok.png", label: "TikTok" },
-            { href: "https://www.tiktok.com/@girls_collective", icon: "/icons/tiktok.png", label: "TikTok2" },
-            { href: "https://www.instagram.com/girls_collective", icon: "/icons/instagram.png", label: "Instagram" },
-            { href: "https://www.threads.com/@girls_collective", icon: "/icons/threads.png", label: "Threads" },
-            { href: "https://www.linkedin.com/company/citygirlscollective/", icon: "/icons/linkedin.png", label: "LinkedIn" },
-          ].map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              target="_blank"
-              rel="noreferrer"
-              className="group"
-              aria-label={s.label}
-              title={s.label}
-            >
-              <span className="grid h-6 w-6 place-items-center rounded-full text-white transition group-hover:opacity-90">
-                {/* icono dentro (aunque el png sea cuadrado, lo hacemos circular con overflow) */}
-                <span className="relative h-5 w-5 overflow-hidden rounded-full">
-                  <Image
-                    src={s.icon}
-                    alt=""
-                    fill
-                    className="object-contain"
-                  />
-                </span>
-              </span>
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
-
-    {/* RIGHT: IMAGE + (caption) */}
-    <div className="flex flex-col items-center md:items-end">
-      <div className="relative w-full max-w-[520px]">
-        <div className="relative aspect-[11/12] overflow-hidden">
-          <Image
-            src="/gc/gc-right.png"
-            alt="Girls Collective visuals"
-            fill
-            className="object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
 </Section>
 
 {/* PROJECT: EL MAPA DEL ALQUILER */}
@@ -529,19 +446,118 @@ export default function SocialMediaWorkPage() {
       </div>
     </div>
 
-    {/* RIGHT — IMAGEN */}
-    <div className="w-full">
-      <div className="relative aspect-[7/5] w-full overflow-hidden">
-        <Image
-          src="/mapa-social.png"
-          alt="El mapa del alquiler social media work"
-          fill
-          className="object-cover"
-        />
+    {/* RIGHT — VIDEO */}
+<div className="w-full">
+  <div className="relative aspect-[7/5] w-full overflow-hidden bg-white">
+    <video
+      src="/mapa-social.mp4"
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="h-full w-full object-cover"
+    />
+  </div>
+</div>
+  </div>
+</Section>
+
+{/* CASE: GIRLS COLLECTIVE (BLANCO) */}
+<Section className="bg-white py-12">
+  <div className="grid gap-10 md:grid-cols-2 md:items-start">
+    {/* LEFT: TEXT */}
+    <div>
+      <h2 className="font-display text-3xl">Project: Girls Collective</h2>
+      <p className="mt-2 text-xs text-[var(--muted)]">
+        2025–2026 | Founder · Spain &amp; Latam
+      </p>
+
+      <div className="mt-8 max-w-[380px] text-justify text-sm leading-snug text-[var(--muted)]">
+        <p>
+          Founded a city-based social discovery platform designed to help women
+          connect through shared interests and real-life experiences.
+        </p>
+        <p className="mt-4">
+          Built the platform end-to-end, creating all content and designing the
+          website independently.
+        </p>
+      </div>
+
+      {/* bullets con flor (a la derecha un poquito como Canva) */}
+      <ul className="mt-10 max-w-[380px] space-y-8 pl-12 md:pl-16 text-sm leading-snug text-[var(--muted)]">
+        {[
+          "Grew the web platform to 500+ users organically in under 2 months.",
+          "After testing multiple channels, identified Threads as the strongest early acquisition channel and leveraged conversation-led content to drive the majority of traffic.",
+        ].map((text, idx) => (
+          <li key={idx} className="flex items-start gap-4">
+            <Image
+              src="/flor-bullet.png"
+              alt=""
+              width={28}
+              height={28}
+              className="mt-0.5 h-[28px] w-[28px] shrink-0 object-contain"
+            />
+            <p className="max-w-[420px] text-justify">{text}</p>
+          </li>
+        ))}
+      </ul>
+
+      {/* links / icons */}
+      <div className="mt-10 flex flex-wrap items-center gap-2 text-sm text-[var(--muted)]">
+        <span className="font-sans font-semibold text-[var(--ink)]">
+          View live platform &amp; channels:
+        </span>
+
+        <div className="flex items-center gap-3">
+          {[
+            { href: "https://girls-collective.com", icon: "/icons/globe.png", label: "Website" },
+            { href: "https://www.tiktok.com/@valenciagirlscollective", icon: "/icons/tiktok.png", label: "TikTok" },
+            { href: "https://www.instagram.com/girls_collective", icon: "/icons/instagram.png", label: "Instagram" },
+            { href: "https://www.threads.com/@girls_collective", icon: "/icons/threads.png", label: "Threads" },
+            { href: "https://www.linkedin.com/company/citygirlscollective/", icon: "/icons/linkedin.png", label: "LinkedIn" },
+          ].map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noreferrer"
+              className="group"
+              aria-label={s.label}
+              title={s.label}
+            >
+              <span className="grid h-6 w-6 place-items-center rounded-full text-white transition group-hover:opacity-90">
+                {/* icono dentro (aunque el png sea cuadrado, lo hacemos circular con overflow) */}
+                <span className="relative h-5 w-5 overflow-hidden rounded-full">
+                  <Image
+                    src={s.icon}
+                    alt=""
+                    fill
+                    className="object-contain"
+                  />
+                </span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* RIGHT: IMAGE + (caption) */}
+    <div className="flex flex-col items-center md:items-end">
+      <div className="relative w-full max-w-[520px]">
+        <div className="relative aspect-[11/12] overflow-hidden">
+          <Image
+            src="/gc/gc-right.png"
+            alt="Girls Collective visuals"
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
     </div>
   </div>
 </Section>
+
 
 {/* WHAT I BRING (CREMITA) */}
 <Section className="bg-[var(--cream)] py-14">
@@ -554,7 +570,7 @@ export default function SocialMediaWorkPage() {
     {/* Bullets con flor */}
     <ul className="mt-8 space-y-8 text-sm leading-snug text-[var(--muted)]">
       {[
-        "Beauty & FMCG industry expertise",
+        "Beauty, lifestyle & FMCG industry expertise",
         "Experience scaling and launching platforms from zero",
         "Strong aesthetic sensibility and brand voice awareness",
         "Hands-on content creation paired with performance insight",
@@ -576,7 +592,7 @@ export default function SocialMediaWorkPage() {
     {/* CTA centrado */}
     <div className="mt-12 text-center">
       <p className="font-display text-xl text-[var(--ink)]">
-        ready for the next challenge!
+        looking for the next challenge!
       </p>
 
       <div className="mt-5 flex flex-col items-center">
