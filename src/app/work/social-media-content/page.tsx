@@ -150,6 +150,16 @@ export default function SocialMediaWorkPage() {
   >
     @louuuinspain
   </a>
+  <span className="mx-1">and</span>
+  <a
+    href="https://www.tiktok.com/@lousamper"
+    target="_blank"
+    rel="noreferrer"
+    className="ml-1 underline underline-offset-2"
+  >
+    @lousamper 
+  </a>
+
 </p>
         </div>
 
